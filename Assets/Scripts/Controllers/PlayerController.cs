@@ -12,6 +12,9 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     #region Variables
+        
+        [SerializeField] private SpriteRenderer _itemSprite;
+        
     #endregion
     
     #region Private Fields
@@ -47,6 +50,20 @@ namespace Controllers
             {
                 _movementController.Movement = Vector2.zero;
             }
+        }
+
+    #endregion
+
+    #region AnimationCallbacks
+
+        public void ItemHidden()
+        {
+            _itemSprite.sortingOrder = -1;
+        }
+        
+        public void ItemVisible()
+        {
+            _itemSprite.sortingOrder = 1;
         }
 
     #endregion

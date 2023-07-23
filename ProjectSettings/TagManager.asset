@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Walls
   - 
   - 
   - 
@@ -50,6 +50,12 @@ TagManager:
   - name: Walls
     uniqueID: 211600731
     locked: 0
-  - name: Character
+  - name: Entity
     uniqueID: 4034614713
+    locked: 0
+  - name: Front Walls
+    uniqueID: 51984887
+    locked: 0
+  - name: UI
+    uniqueID: 1327792459
     locked: 0
